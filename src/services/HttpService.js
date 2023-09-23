@@ -1,6 +1,6 @@
 export const PostWithAuth = (url,body)=>{
     
-    var request =fetch(url,{
+    var request =fetch("api"+url,{
         method:"POST",
         headers:{
             "Content-Type":"application/json",
@@ -14,7 +14,7 @@ export const PostWithAuth = (url,body)=>{
 }
 export const PostWithoutAuth = (url,body)=>{
     
-    var request =fetch(url,{
+    var request =fetch("api"+url,{
         method:"POST",
         headers:{
             "Content-Type":"application/json",
@@ -28,7 +28,7 @@ export const PostWithoutAuth = (url,body)=>{
 
 export const PutWithAuth = (url,body)=>{
     
-    var request =fetch(url,{
+    var request =fetch("api"+url,{
         method:"PUT",
         headers:{
             "Content-Type":"application/json",
@@ -43,7 +43,7 @@ export const PutWithAuth = (url,body)=>{
 
 export const GetWithAuth = (url)=>{
     
-    var request =fetch(url,{
+    var request =fetch("api"+url,{
         method:"GET",
         headers:{
             "Content-Type":"application/json",
@@ -57,7 +57,7 @@ export const GetWithAuth = (url)=>{
 } 
 
 export const DeleteWithAuth = (url) => {
-    const request = fetch(url, {
+    const request = fetch("api"+url, {
       method: "DELETE",
       headers: {
         "Content-Type": "application/json",
@@ -70,7 +70,7 @@ export const DeleteWithAuth = (url) => {
   };
 
 export const RefreshToken =() =>{
-    var request=fetch("auth/refresh",{
+    var request=fetch("api/auth/refresh",{
         method:"POST",
         headers:{
             "Content-Type":"application/json",
