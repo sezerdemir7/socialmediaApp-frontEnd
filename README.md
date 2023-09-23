@@ -1,4 +1,4 @@
 # SclApp demo  version 
-[Sclapp.com]/(sclapp.vercel.app).
+[Sclapp demo](https://sclapp.vercel.app/)
 
 
