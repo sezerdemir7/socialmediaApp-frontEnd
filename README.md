@@ -1,4 +1,3 @@
-# SclApp demo version url
-[demo version](sclapp.vercel.app).
+# SclApp demo  version url=(sclapp.vercel.app)
 
 
